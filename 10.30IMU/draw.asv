@@ -1,0 +1,28 @@
+figure('WindowState','maximized')
+subplot(3,1,1)
+hold on
+plot(IMU_result(:,1),IMU_result(:,5),'-','LineWidth',2,'DisplayName','Pure-IMU_{v_x}')
+plot(real(:,1),real(:,5),'-.','LineWidth',2,'DisplayName','Real_{v_x}')
+title("北向速度差异")
+xlabel("Time/s",'FontName','Times New Roman')
+ylabel("B/deg",'FontName','Times New Roman')
+legend
+grid on
+subplot(3,1,2)
+hold on
+plot(IMU_result(:,1),IMU_result(:,6),'-','LineWidth',2,'DisplayName','Pure-IMU_L')
+plot(real(:,1),real(:,6),'-.','LineWidth',2,'DisplayName','Real_L')
+title("经度差异")
+xlabel("Time/s",'FontName','Times New Roman')
+ylabel("L/deg",'FontName','Times New Roman')
+legend
+grid on
+subplot(3,1,3)
+hold on
+plot(IMU_result(:,1),IMU_result(:,7),'-','LineWidth',2,'DisplayName','Pure-IMU_H')
+plot(real(:,1),real(:,7),'-.','LineWidth',2,'DisplayName','Real_H')
+title("高程差异")
+xlabel("Time/s",'FontName','Times New Roman')
+ylabel("H/m",'FontName','Times New Roman')
+legend
+grid on

@@ -1,0 +1,51 @@
+<mxfile host="Electron" modified="2023-11-21T15:09:18.692Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="eV3evlfZuPrW6OW3gsh6" version="22.0.3" type="device">
+  <diagram name="第 1 页" id="hsT7ypD3uR2W3r9xYxQn">
+    <mxGraphModel dx="869" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-1" target="0SvR4DZD6cDpwRY2oxUP-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-1" value="给定初值" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-2" target="0SvR4DZD6cDpwRY2oxUP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-2" value="数据输入" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-4" target="0SvR4DZD6cDpwRY2oxUP-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-4" value="使用上一历元坐标、速度和本轮观测数据进行姿态更新" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="390" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-6" target="0SvR4DZD6cDpwRY2oxUP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-6" value="使用更新后姿态，以及线性外推坐标、速度、观测数据更新速度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="388.75" width="150" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0SvR4DZD6cDpwRY2oxUP-8" target="0SvR4DZD6cDpwRY2oxUP-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="535" y="510" />
+              <mxPoint x="161" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SvR4DZD6cDpwRY2oxUP-8" value="使用更新后速度、姿态更新坐标" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="390" width="130" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
